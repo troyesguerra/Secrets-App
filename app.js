@@ -32,7 +32,7 @@ const userSchema = new mongoose.Schema({
 });
 
 // Encryption Key
-// const secret = 'Thisisourlittlesecret.';
+
 userSchema.plugin(encrypt, {
     secret: process.env.SECRET,
     encryptedFields: ['password']
