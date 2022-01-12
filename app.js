@@ -181,7 +181,7 @@ app.post('/submit', (req, res) => {
     const submittedSecret = req.body.secret
 
     // passportjs saves the user info in the req object
-    console.log(req.user.id);
+    // console.log(req.user.id);
 
     User.findById(req.user.id)
         .then((foundUser) => {
